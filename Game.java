@@ -29,7 +29,7 @@ public class Game
         return firstFarmer.getAmountOfPotatoes();
     }
     
-    public String getFirstFarmersNameOfPotatoes()
+    public String getFirstFarmersName()
     {
         return firstFarmer.getName();
     }

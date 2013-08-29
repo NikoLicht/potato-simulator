@@ -20,8 +20,10 @@ public class Methods
     public void testPrint(String hisName)
     {
         theGame = new Game();
-        if (hisName == theGame.getFirstFarmersNameOfPotatoes())
-            System.out.println("You can buy " + theGame.getFirstFarmersAmountOfPotatotes() + " of potatoes from Lars");
+        if (hisName.equalsIgnoreCase(theGame.getFirstFarmersName()))
+            System.out.println("You can buy " + theGame.getFirstFarmersName() + " of potatoes from Lars");
+        else
+            System.out.println("There is no farmers called that, try something else");
         
     }
 }
