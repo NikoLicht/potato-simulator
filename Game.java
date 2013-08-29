@@ -19,9 +19,19 @@ public class Game
     public Game()
     {
         firstFarmer = new Farmer();
-        firstFarmer.setName("Lars");
-        firstFarmer.setAmountOfPotatoes(20);
+        firstFarmer.setName("Torben");
+        firstFarmer.setAmountOfPotatoes(60);
         firstFarmer.setPrice(10);
+        
+        secondFarmer = new Farmer();
+        secondFarmer.setName("Henning");
+        secondFarmer.setAmountOfPotatoes(80);
+        secondFarmer.setPrice(15);
+        
+        thirdFarmer = new Farmer();
+        thirdFarmer.setName("Tobias");
+        thirdFarmer.setAmountOfPotatoes(30);
+        thirdFarmer.setPrice(20);
     }
     
     public int getFirstFarmersAmountOfPotatotes()
@@ -33,4 +43,24 @@ public class Game
     {
         return firstFarmer.getName();
     }
+
+    public int getSecondFarmersAmountOfPotatotes()
+    {
+        return secondFarmer.getAmountOfPotatoes();
+    }
+    
+    public String getSecondFarmersName()
+    {
+        return secondFarmer.getName();
+    }
+
+    public int getThirdFarmersAmountOfPotatotes()
+    {
+        return thirdFarmer.getAmountOfPotatoes();
+    }
+    
+    public String getThirdFarmersName()
+    {
+        return thirdFarmer.getName();
+    }    
 }
