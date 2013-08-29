@@ -2,19 +2,26 @@
 /**
  * Write a description of class Farmer here.
  * 
- * @author Lauritz
+ * @author 
  * @version 0.0.1
  */
 public class Farmer
 {
-    // instance variables - replace the example below with your own
+    /**
+     * Currently we only care about
+     * their name,
+     * amount of potatoes they own and
+     * their price for the potatoes
+     */
     private String name;
     private int amountOfPotatoes;
     private int price;
     
     public Farmer()
     {
-        // doesn't really need any constructors
+        /**
+         * Don't really need any constructors for this.
+         */
     }
     
     public void setName(String hisName)
@@ -22,12 +29,17 @@ public class Farmer
         this.name = hisName;
     }
     
+    public String getName()
+    {
+        return this.name;
+    }
+    
     public void setAmountOfPotatoes(int hisPotatoes)
     {
         this.amountOfPotatoes = hisPotatoes;
     }
     
-    public int getAmountOfPotatoes(int hisPotatoes)
+    public int getAmountOfPotatoes()
     {
         return this.amountOfPotatoes;
     }
