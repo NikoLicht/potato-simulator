@@ -34,7 +34,12 @@ public class Game
         thirdFarmer.setPrice(20);
     }
     
-    public int getFirstFarmersAmountOfPotatotes()
+    public void setFirstFarmersAmountOfPotatoes(int amountOfPotatoesToChange)
+    {
+        firstFarmer.setAmountOfPotatoes(getFirstFarmersAmountOfPotatoes() - amountOfPotatoesToChange);
+    }
+    
+    public int getFirstFarmersAmountOfPotatoes()
     {
         return firstFarmer.getAmountOfPotatoes();
     }
