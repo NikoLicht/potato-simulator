@@ -11,61 +11,39 @@ public class Game
      * We want to load a few farmers and a player,
      * so we create four objects and give them some values.
      */
-    
-    private Farmer firstFarmer;
-    private Farmer secondFarmer;
-    private Farmer thirdFarmer;
+
+    Farmer[] listOfFarmers = new Farmer[3];
     
     public Game()
     {
-        firstFarmer = new Farmer();
-        firstFarmer.setName("Torben");
-        firstFarmer.setAmountOfPotatoes(60);
-        firstFarmer.setPrice(10);
+        listOfFarmers[0] = new Farmer();
+        listOfFarmers[0].setName("Torben");
+        listOfFarmers[0].setAmountOfPotatoes(60);
+        listOfFarmers[0].setPrice(10);
         
-        secondFarmer = new Farmer();
-        secondFarmer.setName("Henning");
-        secondFarmer.setAmountOfPotatoes(80);
-        secondFarmer.setPrice(15);
+        listOfFarmers[1] = new Farmer();
+        listOfFarmers[1].setName("Henning");
+        listOfFarmers[1].setAmountOfPotatoes(80);
+        listOfFarmers[1].setPrice(15);
         
-        thirdFarmer = new Farmer();
-        thirdFarmer.setName("Tobias");
-        thirdFarmer.setAmountOfPotatoes(30);
-        thirdFarmer.setPrice(20);
+        listOfFarmers[2] = new Farmer();
+        listOfFarmers[2].setName("Tobias");
+        listOfFarmers[2].setAmountOfPotatoes(30);
+        listOfFarmers[2].setPrice(20);
     }
     
-    public void setFirstFarmersAmountOfPotatoes(int amountOfPotatoesToChange)
+    public void removePotatoesFromFarmer(int i, int amountOfPotatoesToChange)
     {
-        firstFarmer.setAmountOfPotatoes(getFirstFarmersAmountOfPotatoes() - amountOfPotatoesToChange);
+        listOfFarmers[i].setAmountOfPotatoes(getFarmersAmountOfPotatoes(i) - amountOfPotatoesToChange);
     }
     
-    public int getFirstFarmersAmountOfPotatoes()
+    public int getFarmersAmountOfPotatoes(int i)
     {
-        return firstFarmer.getAmountOfPotatoes();
+        return listOfFarmers[i].getAmountOfPotatoes();
     }
     
-    public String getFirstFarmersName()
+    public String getFarmersName(int i)
     {
-        return firstFarmer.getName();
+        return listOfFarmers[i].getName();
     }
-
-    public int getSecondFarmersAmountOfPotatotes()
-    {
-        return secondFarmer.getAmountOfPotatoes();
-    }
-    
-    public String getSecondFarmersName()
-    {
-        return secondFarmer.getName();
-    }
-
-    public int getThirdFarmersAmountOfPotatotes()
-    {
-        return thirdFarmer.getAmountOfPotatoes();
-    }
-    
-    public String getThirdFarmersName()
-    {
-        return thirdFarmer.getName();
-    }    
 }
