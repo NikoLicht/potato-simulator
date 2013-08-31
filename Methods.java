@@ -19,7 +19,11 @@ public class Methods
         theGame = new Game();
     }
     
-    public void testPrint(String hisName)
+    /**
+     * byPotatoes prompts the user to buy some potatoes
+     * @param hisName
+     */
+    public void buyPotatoes(String hisName)
     {
         Scanner scan = new Scanner(System.in);
         for (int i = 0; i < theGame.listOfFarmers.length; i++)

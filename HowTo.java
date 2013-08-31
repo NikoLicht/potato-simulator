@@ -15,7 +15,10 @@ public class HowTo
     }
     
     
-    public static void main() 
+    public static void main()
+        /**
+         * Print out instructions for the game.
+         */
     {
         System.out.println("Welcome to Farmers!");
         System.out.println("This is a fun interactive game about buying potatoes.");
