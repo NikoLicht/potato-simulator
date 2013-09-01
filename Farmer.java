@@ -48,4 +48,9 @@ public class Farmer
     {
         this.price = hisPrice;
     }
+
+    public int getPrice()
+    {
+        return this.price;
+    }
 }

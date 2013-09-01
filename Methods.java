@@ -28,17 +28,39 @@ public class Methods
         Scanner scan = new Scanner(System.in);
         for (int i = 0; i < theGame.listOfFarmers.length; i++)
         {
-                    if (hisName.equalsIgnoreCase(theGame.getFarmersName(i)))
+            // if (hisName.equalsIgnoreCase(theGame.getFarmersName(i)))
+            // {
+            //     System.out.println("You can buy " + theGame.getFarmersAmountOfPotatoes(i) + " potatoes from " + theGame.getFarmersName(i) + " for " + theGame.getFarmersPrice(i) + " each.");
+            //     System.out.printf("Would you like to buy some potatoes? (y/n): ");
+            //     String answer = scan.next();
+            //     if (answer.equalsIgnoreCase("y")) {
+            //         System.out.printf("How many would you like to by: ");
+            //         int amount = scan.nextInt();
+            //         System.out.println("You succesfully bought " + amount + " potatoes from " + theGame.getFarmersName(i));
+            //         theGame.removePotatoesFromFarmer(i, amount);
+            //         }
+            // }
+            if (hisName.equalsIgnoreCase(theGame.getFarmersName(i)))
+            {
+                System.out.println("You can buy " + theGame.getFarmersAmountOfPotatoes(i) + " potatoes from " + theGame.getFarmersName(i) + " for " + theGame.getFarmersPrice(i) + " each.");
+                System.out.printf("Would you like to buy some potatoes? (y/n): ");
+                String answer = scan.next();
+                while (! answer.equalsIgnoreCase("y"))
+                {
+                    if (answer.equalsIgnoreCase("n"))
                     {
-                        System.out.println("You can buy " + theGame.getFarmersAmountOfPotatoes(i) + " potatoes from " + theGame.getFarmersName(i));
-                        System.out.printf("Would you like to buy some potatoes? (y/n): ");
-                        String answer = scan.next();
-                        if (answer.equalsIgnoreCase("y")) {
-                            System.out.printf("How many would you like to by: ");
-                            int amount = scan.nextInt();
-                            System.out.println("You succesfully bought " + amount + " potatoes from " + theGame.getFarmersName(i));
-                            theGame.removePotatoesFromFarmer(i, amount);
-                            }
+                        break;
+                    }
+                    System.out.printf("Would you like to buy some potatoes? (y/n): ");
+                    answer = scan.next();
+                }
+                if (answer.equalsIgnoreCase("y"))
+                {
+                    System.out.printf("How many would you like to buy: ");
+                    int amount = scan.nextInt();
+                    System.out.println("You succesfully bought " + amount + " potatoes from " + theGame.getFarmersName(i));
+                    theGame.removePotatoesFromFarmer(i, amount);
+                }
             }
         }
     }

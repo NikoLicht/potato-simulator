@@ -46,4 +46,9 @@ public class Game
     {
         return listOfFarmers[i].getName();
     }
+
+    public int getFarmersPrice(int i)
+    {
+        return listOfFarmers[i].getPrice();
+    }
 }
