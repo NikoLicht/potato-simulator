@@ -9,7 +9,9 @@ How to launch
 ### With the PotatoSimulator.jar file ###
 
 If the PotatoSimulator.jar already has been compiled (and made sure it's the newest version), then just run  
-`java -jar PotatoSimulator.jar`
+`git clone https://github.com/iamstalkr/potato-simulator.git && cd "Potato Simulator"`  
+`git checkout non-bluej`  
+`java -jar PotatoSimulator.jar
 
 ### Without the PotatoSimulator.jar file (or how to compile) ###
 
