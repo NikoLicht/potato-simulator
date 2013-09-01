@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class StartGame here.
- * 
- * @author 
- * @version 0.0.1
- */
 public class Game
 {
     /**

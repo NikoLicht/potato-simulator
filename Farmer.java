@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class Farmer here.
- * 
- * @author 
- * @version 0.0.1
- */
 public class Farmer
 {
     /**
