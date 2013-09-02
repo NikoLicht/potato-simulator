@@ -1,9 +1,8 @@
 Important:
- ☐ update buyPotatoes() to check whether the farmer got enough potatoes to sell
  ☐ update buyPotatoes() to subtract money from the player after a purchase
 
 Features:
-  Because it is in alpha, no features is planned at the moment,
+  Because it is in alpha, no features are planned at the moment,
   currently just developing the entire game.
 
 Bugs:
@@ -11,3 +10,4 @@ Bugs:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ update buyPotatoes() to check whether the farmer got enough potatoes to sell @done (13-09-02 13:13) @project(Important)

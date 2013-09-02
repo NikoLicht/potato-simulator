@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class StartGame here.
- * 
- * @author 
- * @version 0.0.1
- */
 public class Game
 {
     /**
@@ -45,5 +38,10 @@ public class Game
     public String getFarmersName(int i)
     {
         return listOfFarmers[i].getName();
+    }
+
+    public int getFarmersPrice(int i)
+    {
+        return listOfFarmers[i].getPrice();
     }
 }

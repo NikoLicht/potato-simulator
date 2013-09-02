@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class Farmer here.
- * 
- * @author 
- * @version 0.0.1
- */
 public class Farmer
 {
     /**
@@ -47,5 +40,10 @@ public class Farmer
     public void setPrice(int hisPrice)
     {
         this.price = hisPrice;
+    }
+
+    public int getPrice()
+    {
+        return this.price;
     }
 }
