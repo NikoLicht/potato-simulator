@@ -3,7 +3,7 @@ Potato Simulator
 
 Some more info will be available once the project have matured some more. Currently it is a little bit boring.
 
-How to launch
+How to launch (OS X and Linux)
 -----------
 
 ### With the PotatoSimulator.jar file ###
